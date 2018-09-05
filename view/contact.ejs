@@ -1,0 +1,46 @@
+<%- include partial/head.ejs %>
+
+<section id="bill">
+    <h1 class="title">Contact</h1>
+    <h2 class="title">TP Front</h2>
+    <p>
+        Coder un formulaire de contact.
+    </p>
+    <div class="form-group" id="FormContact">
+
+        <h1>Formulaire d'envoie de mail</h1>
+        <br>
+        <form class="form-vertical" role="form" method="post" action="/email">
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <input type="email" name="sender" id="sender" class="form-control" placeholder="Votre adresse mail" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <input type="text" name="subject" id="subject" class="form-control" placeholder="L'objet du mail" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <textarea rows="11" name="message" id="message" class="form-control" placeholder="Le contenu de votre mail"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-10">
+                    <button type="submit" id="btn_sub" class="btn btn-primary">Envoyer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+    <h2 class="title">TP back</h2>
+    <p>
+        Intégrer la lib nodemailer à l'application.
+    </p>
+</section>
+
+<%- include partial/footer.ejs %>
